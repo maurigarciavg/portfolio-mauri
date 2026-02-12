@@ -1,0 +1,128 @@
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover; 
+  object-position: center 20%;
+  margin-top: 30px;;
+  border: 4px solid #646cff; 
+  box-shadow: 0 0 20px rgba(100, 108, 255, 0.5); 
+  transition: transform 0.3s ease;
+
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  z-index: 2;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-wrapper {
+  margin-bottom: 2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #646cff; 
+  box-shadow: 0 0 20px rgba(100, 108, 255, 0.5); 
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05) rotate(3deg); 
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.highlight {
+  color: #646cff;
+  text-shadow: 0 0 10px rgba(100, 108, 255, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s;
+  margin-bottom: 30px;
+}
+
+.primary {
+  background-color: #646cff;
+  color: white;
+  border: 1px solid #646cff;
+}
+
+.primary:hover {
+  background-color: #535bf2;
+  box-shadow: 0 0 15px rgba(83, 91, 242, 0.5);
+}
+
+.secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.secondary:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+}
